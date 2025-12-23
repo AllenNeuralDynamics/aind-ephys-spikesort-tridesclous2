@@ -5,6 +5,7 @@
     },
     "sorter": {
         "apply_preprocessing": true,
+        "preprocessing_dict": {},
         "apply_motion_correction": true,
         "motion_correction_preset": "dredge_fast",
         "clustering_ms_before": 0.5,
