@@ -138,6 +138,8 @@ if __name__ == "__main__":
     si.set_global_job_kwargs(**job_kwargs)
 
     sorter_params = spikesorting_params["sorter"]
+    sorter_params["job_kwargs"] = job_kwargs
+
 
     ####### SPIKESORTING ########
     logging.info(f"\n\nSPIKE SORTING WITH {SORTER_NAME.upper()}\n")
@@ -149,7 +151,6 @@ if __name__ == "__main__":
 
     sorting_params = None
 
-    si.set_global_job_kwargs(**job_kwargs)
     t_sorting_start_all = time.perf_counter()
 
     # check if test
