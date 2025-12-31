@@ -15,7 +15,7 @@
         "template_radius_um": 100.0,
         "freq_min": 150.0,
         "freq_max": 6000.0,
-        "cache_preprocessing_mode": "auto",
+        "cache_preprocessing_mode": "no-cache",
         "peak_sign": "neg",
         "detect_threshold": 5.0,
         "n_peaks_per_channel": 5000,
