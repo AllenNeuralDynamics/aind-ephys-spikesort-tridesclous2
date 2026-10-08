@@ -31,9 +31,8 @@ try:
 except ImportError:
     HAVE_AIND_LOG_UTILS = False
 
-# LOCAL
-URL = "https://github.com/AllenNeuralDynamics/aind-ephys-spikesort-tridesclous2"
-VERSION = "1.0"
+URL = os.getenv("CODE_REPO", "https://github.com/AllenNeuralDynamics/aind-ephys-spikesort-tridesclous2")
+VERSION = os.getenv("CODE_VERSION", "1.0")
 
 SORTER_NAME = "tridesclous2"
 
